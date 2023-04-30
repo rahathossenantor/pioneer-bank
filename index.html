@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pioneer Bank</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="login-area">
+      <h1 class="text-center">Welcome To Pioneer Bank!</h1>
+      <div class="login-main">
+        <div class="login">
+          <h4>Login</h4>
+          <input type="email" name="email" id="email" placeholder="Enter your email address:" required class="form-control">
+            <input type="password" name="password" id="password" placeholder="Type your password:" required class="form-control">
+            <button type="" id="submit-btn" class="btn btn-success">Enter</button>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <p id="errorMsg" class="text-center">Please fillup the form!</p>
+      <p id="wrongMsg" class="text-center">You entered wrong email or password!</p>
+    </section>
+    
+    <section id="transaction-area">
+      <div id="transaction-main" class="row status-bur">
+        <div class="col-md-4">
+          <div class="diposit status">
+            <h5>Diposit</h5>
+            <h3>$ <span id="current-diposit-status">00</span></h3>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <h5>Withdraw</h5>
+            <h3>$ <span id="current-withdraw-status">00</span></h3>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="balance status">
+            <h5>Balance</h5>
+            <h3>$ <span id="current-balance-status">1240</span></h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row transaction">
+        <div class="col-md-6">
+          <div class="login-main">
+            <h4>Diposit</h4>
+            <input type="number" id="dipositAmount" class="form-control" placeholder="$ Amount you want to diposit">
+              <button id="dipositBtn" class="btn btn-success">Diposit</button>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="login-main">
+            <h4>Withdraw</h4>
+            <input type="number" id="withdrawAmount" class="form-control" placeholder="$ Amount you want to withdraw">
+              <button id="withdrawBtn" class="btn btn-success">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+  </footer>
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
